@@ -827,3 +827,11 @@ img {
   border-radius: 50%; /* Optional: make it circular */
 }
 
+footer {
+  background-color: #e1e2ec; /* Change this to your desired color */
+  color: white; /* Text color */
+  padding: 40px 0; /* Add some padding */
+  text-align: center; /* Center the text */
+  height: min-content;
+}
+
