@@ -159,3 +159,16 @@
         font-size: 1.25rem; /* Heading size */
     }
 }
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .profile-photo {
+        width: 250px; /* Adjust size for tablet screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-photo {
+        width: 200px; /* Adjust size for smaller mobile screens */
+    }
+}

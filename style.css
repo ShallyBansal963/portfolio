@@ -145,7 +145,7 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    height: 90vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -162,16 +162,22 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: 60vh;
     background-color: #ebeff6;
   }
   
   .section__pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
+   
     margin: auto 0;
   }
+
+  
+
+
+  
+
+
   
   .section__text {
     align-self: center;
@@ -810,3 +816,14 @@ h2 {
   margin: 0 1rem; /* Optional: Adds horizontal padding for better readability */
   line-height: 1.6; /* Optional: Improves line spacing */
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-photo { /* Assuming your photo has a class 'profile-photo' */
+  width: 350px; /* Default width for larger screens */
+  border-radius: 50%; /* Optional: make it circular */
+}
+
