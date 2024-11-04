@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="navbar">
-    <nav id="desktop-nav"  >
+    <nav id="desktop-nav">
         <div class="logo">Shally's Portfolio</div>
         <div>
             <ul class="nav-links">
@@ -25,8 +25,7 @@
     </nav>
   </header>
 
-    
-    <nav id="hamburger-nav" >
+  <nav id="hamburger-nav">
         <div class="logo">Shally's Portfolio</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
@@ -45,9 +44,9 @@
         </div>
     </nav>
 
-    <section id="profile" >
+    <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/aa.jpeg" alt="Shally Bansal profile picture" style="width: 90%; height: auto;" />
+            <img src="./assets/aa.jpeg" alt="Shally Bansal profile picture" />
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
@@ -67,6 +66,15 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function toggleMenu() {
+            const menuLinks = document.querySelector('.menu-links');
+            menuLinks.classList.toggle('open'); // Toggle the open class to show/hide menu
+        }
+    </script>
+</body>
+</html>
 
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
@@ -312,8 +320,7 @@
 
 
           
-
-  <div id="contact" class="certificates-section" id="Publications">
+<div id="contact" class="certificates-section">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title1">Contact Me</h1>
     <br>
@@ -323,55 +330,39 @@
       <div class="section-text">
         <h2>Let's Connect</h2>
         <br>
-          <p>I’m a data analyst passionate about solving problems and helping others grow. 
-            Whether you need, feel free to reach out. I'm also open to exploring new opportunities.
-          </p>
-          <br>
-          <br>
-          <br>
-        <div class="socials-container" >
-          <img src="./assets/linkedin.png" alt="My LinkedIn profile"  onclick="location.href='https://www.linkedin.com/in/shellybbansal'"  class="icon-margin"/>
-          <img src="./assets/github.png" alt="My GitHub profile"  onclick="location.href='https://github.com/ShallyBansal963'"  class="icon-margin"/>
+        <p>
+          I’m a data analyst passionate about solving problems and helping others grow. 
+          Whether you need, feel free to reach out. I'm also open to exploring new opportunities.
+        </p>
+        <br>
+        <br>
+        <br>
+        <div class="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" onclick="location.href='https://www.linkedin.com/in/shellybbansal'" class="icon-margin" />
+          <img src="./assets/github.png" alt="My GitHub profile" onclick="location.href='https://github.com/ShallyBansal963'" class="icon-margin" />
         </div>
       </div>
       
-            <div class="contact-card">
-                
-                  <form>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Send Message</button>
-                </form>
-                    </div>
-                </div>
-
-
-                
-
-
-                
-
-
-            </div>
-        </div>
-        
-        
+      <div class="contact-card">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
     </div>
-
-    
-</div>
-
-
+  </div>
+  
 
 
 
