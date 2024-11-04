@@ -172,3 +172,33 @@
         width: 200px; /* Adjust size for smaller mobile screens */
     }
 }
+
+@media screen and (max-width: 600px) {
+    #profile {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items in the column */
+        gap: 1.5rem; /* Reduce the gap between elements */
+        height: auto; /* Let content define the height on mobile */
+        padding: 1rem; /* Add padding for breathing room */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Hide regular nav links */
+    .nav-links {
+      display: none;
+    }
+  
+    /* Show hamburger menu */
+    .hamburger-menu {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar {
+      background-color: transparent; /* Remove background color */
+      box-shadow: none; /* Remove shadow */
+      padding-top: 0%;
+    }
+  }
