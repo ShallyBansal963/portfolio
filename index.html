@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <header class="navbar">
+    <nav id="desktop-nav"  >
+        <div class="logo">Shally's Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#Publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+
+    
+    <nav id="hamburger-nav" >
+        <div class="logo">Shally's Portfolio</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+                <li><a href="#Publications" onclick="toggleMenu()">Publications</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile" >
+        <div class="section__pic-container">
+            <img src="./assets/aa.jpeg" alt="Shally Bansal profile picture" style="width: 90%; height: auto;" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title1">Shally Bansal</h1>
+            <p class="section__text__p2">Data Analyst</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume_23_oct.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/shellybbansal'" />
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/ShallyBansal963'" />
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title1">About Me</h1>
+        <div class="text-container">
+          <p>
+            I’m Shally Bansal, a dedicated Data Analyst based in Berlin, with a fervent commitment to unlocking the potential of data. 
+            With a robust skill set in Power BI, Tableau, and SQL, I excel at transforming complex datasets into compelling narratives that drive strategic business decisions.
+             My analytical mindset, coupled with a passion for innovative problem-solving, empowers organizations to thrive in today's data-driven landscape.
+             I strive to create impactful insights that not only inform but inspire action and growth.
+          </p>
+          <br>
+      </div>
+      
+        <div class="section-container">
+            <div class="about-details-container">
+              
+                <h3 class="title">Education</h3><br>
+                <div class="education-details">
+                    <div class="education-item">
+                        <img src="./assets/images.png" alt="Arden University Logo" class="education-logo" />
+                        <div class="education-info">
+                            <h4>Arden University</h4>
+                            <p class="degree">
+                                <a href="./assets/resume-example.pdf" target="_blank">Master of Science in Data Analytics and Marketing</a>
+                            </p>
+                            <p class="date-location">April 2024 - Berlin, Germany</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="education-item">
+                        <img src="./assets/punjabi.jpeg" alt="Punjabi University Logo" class="education-logo" />
+                        <div class="education-info">
+                            <h4>Punjabi University</h4>
+                            <p class="degree">
+                                <a href="./assets/resume-example.pdf" target="_blank">Master of Technology in Computer Science</a>
+                            </p>
+                            <p class="date-location">May 2009 - Patiala, India</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="education-item">
+                        <img src="./assets/punjabi.jpeg" alt="Punjabi University Logo" class="education-logo" />
+                        <div class="education-info">
+                            <h4>Punjabi University</h4>
+                            <p class="degree">
+                                <a href="./assets/resume-example.pdf" target="_blank">Master of Science in Mathematics</a>
+                            </p>
+                            <p class="date-location">May 2006 - Patiala, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+            
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+    </section>
+
+
+    <section id="Skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        
+        <div class="experience-details-container">
+            <div class="about-containers">
+                
+                <!-- Data Analysis Section -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Analytical Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="assets/powerbi.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Power BI</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/tableau.jpeg" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Tableau</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="excel.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Excel</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/MATPLOTLIB.jpeg" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Matplotlib</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="SEABORN.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Seaborn</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Data Visualization Section -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/SQL.jpeg" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/python.jpeg" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/HTML.jpeg" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+    <div class="projects-section" id="projects">
+        <p class="section__text__p1">Check Out My</p>
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="object detection.png" alt="Object Detection Using YOLOv5" />
+                <h3>Object Detection Using YOLOv5</h3>
+                <p>YOLO V5</p>
+                <button class="view-button" onclick="location.href='https://github.com/ShallyBansal963/Object-Detection-Using-YOLOv5'">View Project</button>
+            </div>
+            <div class="project-card">
+                <img src="assets/1*tRUUcFg5nqnEFZQJpIEdWg.png" alt="Global Superstore Sales Performance" />
+                <h3>Global Superstore Sales Performance</h3>
+                <p>Tableau</p>
+                <button class="view-button" onclick="location.href='https://www.linkedin.com/feed/update/urn:li:activity:7252681645323939840/'">View Project</button>
+            </div>
+            <div class="project-card">
+                <img src="credit card.webp" alt="Credit Card Sales Insight" />
+                <h3>Credit Card Sales Insight</h3>
+                <p>Power BI</p>
+                <button class="view-button" onclick="location.href='https://www.linkedin.com/in/shellybbansal/recent-activity/all/'">View Project</button>
+            </div>
+            <div class="project-card">
+                <img src="cnn.webp" alt="Supply Chain Data Analysis" />
+                <h3>Pneumonia Detection from Chest X-Rays: A Deep Learning Approach</h3>
+                <p>CNN, Python, Keras</p>
+                <button class="view-button" onclick="location.href='https://github.com/ShallyBansal963/pneumonia-detection'">View Project</button>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+    
+
+    <div class="certificates-section" id="certificates">
+      <p class="section__text__p1">Check Out My</p>
+      <h2>Certificates</h2>
+      <div class="certificates-container">
+          <div class="certificate-card">
+              <img src="assets/UC-81af0744-2f57-4c5f-b1ed-2ea318e6365c.jpg" alt="Microsoft Power BI Desktop for Business Intelligence">
+              <p>Microsoft Power BI Desktop for Business Intelligence</p>
+              <a class="certificate-link" href="https://www.udemy.com/certificate/UC-81af0744-2f57-4c5f-b1ed-2ea318e6365c/" target="_blank">View Certificate</a>
+          </div>
+          <div class="certificate-card">
+              <img src="assets/Screenshot 2024-11-04 at 01.28.16.png" alt="Excel: Mother of Business Intelligence">
+              <p>Excel: Mother of Business Intelligence</p>
+              <a class="certificate-link" href="https://codebasics.io/certificate/CB-51-366451" target="_blank">View Certificate</a>
+          </div>
+          <div class="certificate-card">
+              <img src="assets/Screenshot 2024-11-04 at 01.20.32.png" alt="Python (Basic)">
+              <p>Python (Basic)</p>
+              <a class="certificate-link" href="https://www.hackerrank.com/certificates/259e6d378376" target="_blank">View Certificate</a>
+          </div>
+          <div class="certificate-card">
+              <img src="assets/Screenshot 2024-11-04 at 01.21.58.png" alt="SQL (Advanced)">
+              <p>SQL (Advanced)</p>
+              <a class="certificate-link" href="https://www.hackerrank.com/certificates/1b21601ada01" target="_blank">View Certificate</a>
+          </div>
+      </div>
+  </div>
+  
+
+
+
+
+
+  <div class="certificates-section" id="Publications">
+    <p class="section__text__p1">Explore My</p>
+    <h2 class="title">Research Publications</h2>
+
+    <div class="publication-card">
+        <h3>Augmented Reality: A Comprehensive Review</h3>
+        <p>Dargan, S., Bansal, S., Kumar, M. et al. <i>Arch Computat Methods Eng</i>, 30, 1057–1080 (2023).</p>
+        <p class="publication-details">
+            <a href="https://doi.org/10.1007/s11831-022-09831-7" target="_blank">DOI: 10.1007/s11831-022-09831-7</a> |
+            <a href="https://link.springer.com/article/10.1007/s11831-022-09831-7" target="_blank">View on Springer</a>
+        </p>
+    </div>
+
+    <div class="publication-card">
+        <h3>OKC Classifier: An Efficient Approach for Classification of Imbalanced Dataset Using Hybrid Methodology</h3>
+        <p>Bathla, A.K., Bansal, S., & Kumar, M. <i>Soft Comput</i>, 26, 11497–11503 (2022).</p>
+        <p class="publication-details">
+            <a href="https://doi.org/10.1007/s00500-022-07441-w" target="_blank">DOI: 10.1007/s00500-022-07441-w</a> |
+            <a href="https://link.springer.com/article/10.1007/s00500-022-07441-w#citeas" target="_blank">View on Springer</a>
+        </p>
+    </div>
+
+    <div class="publication-card">
+        <h3>Worddeepnet: Handwritten Gurumukhi Word Recognition Using Convolutional Neural Network</h3>
+        <p>Kaur, H., Bansal, S., Kumar, M. et al. <i>Multimed Tools Appl</i>, 82, 46763–46788 (2023).</p>
+        <p class="publication-details">
+            <a href="https://doi.org/10.1007/s11042-023-15527-2" target="_blank">DOI: 10.1007/s11042-023-15527-2</a> |
+            <a href="https://link.springer.com/article/10.1007/s11042-023-15527-2#citeas" target="_blank">View on Springer</a>
+        </p>
+    </div>
+    
+</div>
+
+
+          
+<br>
+  <div id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title1">Contact Me</h1>
+    <br>
+    
+    <div class="section-container">
+      <!-- Left Column (Text) -->
+      <div class="section-text">
+        <h2>Let's Connect</h2>
+        <br>
+          <p>I’m a data analyst passionate about solving problems and helping others grow. 
+            Whether you need, feel free to reach out. I'm also open to exploring new opportunities.
+          </p>
+          <br>
+          <br>
+          <br>
+        <div class="socials-container" >
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile"  onclick="location.href='https://www.linkedin.com/in/shellybbansal'"  class="icon-margin"/>
+          <img src="./assets/github.png" alt="My GitHub profile"  onclick="location.href='https://github.com/ShallyBansal963'"  class="icon-margin"/>
+        </div>
+      </div>
+      
+            <div class="contact-card">
+                
+                  <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+                    </div>
+                </div>
+
+
+                
+
+
+                
+
+
+            </div>
+        </div>
+        
+        
+    </div>
+
+    
+</div>
+
+
+
+
+
+    <footer>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
