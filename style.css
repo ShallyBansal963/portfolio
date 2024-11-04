@@ -34,7 +34,7 @@ nav, .nav-links {
   width: 100%;
   background-color: #fffdfd;
   padding: 40px 0;
-  z-index: 10;        /* Ensure it stays on top */
+  z-index: 40;        /* Ensure it stays on top */
   box-shadow: 0 6px 8px rgba(188, 150, 150, 0.2);
 }
 
@@ -704,8 +704,8 @@ footer p {
   font-size: 1rem;
   color: #141313;
   line-height: 1.6;
-  padding-right: 120px; /* Add padding to push the text more left */
-  margin-left: -120px; /* Adjust as needed to shift left */
+  padding-right: 90px; /* Add padding to push the text more left */
+  margin-left: -70px; /* Adjust as needed to shift left */
 }
 
 
