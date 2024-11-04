@@ -1,6 +1,7 @@
 /* GENERAL */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -28,19 +29,21 @@ nav, .nav-links {
   display: flex;
 }
 .navbar {
-  position: sticky;   /* This makes the navbar stick at the top */
+   /* This makes the navbar stick at the top */
   top: 0;
   width: 100%;
-  background-color: #fffdfd;
+  background-color: #ffffff;
   padding: 40px 0;
   z-index: 40;        /* Ensure it stays on top */
   box-shadow: 0 6px 8px rgba(188, 150, 150, 0.2);
+  position: sticky;
 }
 
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 1vh; 
+  height: 1vh;
+  
 }
 
 .nav-links {
@@ -104,18 +107,22 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  display: none;
+  z-index: 10;
+  flex-direction: column;
 }
 
 .menu-links a {
   display: block;
   padding: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: black;
 }
 
 .menu-links li {
   list-style: none;
+  margin: 0.5rem 0;
 }
 
 .menu-links.open {
@@ -132,47 +139,6 @@ a:hover {
 
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 20px 0; /* Reduce padding on smaller screens */
-  }
-
-  .nav-links {
-    font-size: 1rem; /* Smaller font size for mobile */
-    flex-direction: column; /* Stack links vertically */
-    gap: 1rem; /* Reduce the gap between links */
-  }
-
-  .logo {
-    font-size: 1.5rem; /* Smaller logo size */
-  }
-
-  .hamburger-menu {
-    display: inline-block; /* Show hamburger menu */
-  }
-
-  #hamburger-nav {
-    display: block; /* Show hamburger menu */
-  }
-
-  .menu-links {
-    position: static; /* Change position for mobile */
-    max-height: none; /* Allow it to display */
-    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent background */
-    padding: 10px 0; /* Padding for menu */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
-  }
-
-  .menu-links.open {
-    display: block; /* Display menu when open */
-  }
-
-  .menu-links a {
-    font-size: 1.2rem; /* Smaller font size for menu items */
-  }
 }
 
 /* SECTIONS */
@@ -438,8 +404,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: auto; /* Change to auto for flexibility on small screens */
-  padding: 2rem 1rem; /* Add padding for touch targets */
+  height: 70vh;
 }
 
 .contact-info-upper-container {
@@ -448,50 +413,29 @@ article .icon {
   border-radius: 2rem;
   border: rgb(163, 163, 163) 0.1rem solid;
   background: rgb(250, 250, 250);
-  margin: 1rem auto; /* Reduced margin for smaller screens */
-  padding: 1rem; /* Increase padding for better touch targets */
-  flex-direction: column; /* Stack items vertically on mobile */
-  width: 90%; /* Make container responsive */
+  margin: 2rem auto;
+  padding: 0.5rem;
 }
 
 .contact-info-container {
   display: flex;
-  flex-direction: column; /* Stack info items vertically */
-  align-items: center; /* Center content */
-  gap: 1rem; /* Increased gap for better spacing */
-  margin: 1rem 0; /* Adjust margins for flexibility */
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem;
 }
 
 .contact-info-container p {
-  font-size: 1.2rem; /* Adjust font size for readability */
-  text-align: center; /* Center text for better appearance */
+  font-size: larger;
 }
 
 /* FOOTER SECTION */
 footer {
-  height: auto; /* Change to auto for flexibility */
+  height: 26vh;
   margin: 0 1rem;
-  padding: 1rem 0; /* Add padding for touch targets */
 }
 
 footer p {
   text-align: center;
-  font-size: 1rem; /* Ensure footer text is readable */
-}
-
-/* Media Queries for Smaller Screens */
-@media (max-width: 768px) {
-  .contact-info-container p {
-    font-size: 1rem; /* Slightly reduce font size on small screens */
-  }
-
-  .contact-info-upper-container {
-    padding: 1rem; /* Ensure padding is consistent */
-  }
-
-  footer p {
-    font-size: 0.9rem; /* Reduce footer font size on mobile */
-  }
 }
 
 /* EDUCATION SECTION */
@@ -859,4 +803,10 @@ h2 {
 
 .view-button:hover {
   background-color: #0056b3;
+}
+
+.about-section p {
+  text-align: justify;
+  margin: 0 1rem; /* Optional: Adds horizontal padding for better readability */
+  line-height: 1.6; /* Optional: Improves line spacing */
 }

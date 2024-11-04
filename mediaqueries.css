@@ -101,3 +101,61 @@
         text-align: justify;
     }
 }
+
+
+@media screen and (max-width: 600px) {
+    #contact {
+        padding: 1rem; /* Add padding for better spacing */
+    }
+    
+    .section-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .section-text {
+        margin-bottom: 1.5rem; /* Spacing between text and form */
+        text-align: center; /* Center text on smaller screens */
+    }
+    
+    .socials-container {
+        display: flex;
+        justify-content: center; /* Center icons */
+        gap: 1rem; /* Space between icons */
+        margin-top: 1rem; /* Space above icons */
+    }
+
+    .contact-card {
+        width: 100%; /* Full width for contact form */
+        max-width: 400px; /* Optional: Limit max width for form */
+        margin: 0 auto; /* Center form */
+    }
+
+    .form-group {
+        margin-bottom: 1rem; /* Space between form fields */
+        display: flex;
+        flex-direction: column; /* Stack label and input vertically */
+    }
+    
+    .form-group label {
+        margin-bottom: 0.5rem; /* Space below label */
+    }
+
+    .btn-submit {
+        width: 100%; /* Full width for the button */
+        padding: 0.75rem; /* Button padding */
+        font-size: 1rem; /* Increase font size */
+    }
+    
+    /* Adjust font sizes for better readability */
+    .title1 {
+        font-size: 1.5rem; /* Title size */
+    }
+    .section__text__p1 {
+        font-size: 1rem; /* Adjusted for readability */
+    }
+    h2 {
+        font-size: 1.25rem; /* Heading size */
+    }
+}
