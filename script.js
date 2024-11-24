@@ -1,21 +1,22 @@
-function toggleMenu() {
-    // Select the menu and hamburger icon elements
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-    document.querySelector('.hamburger-icon').addEventListener('click', function() {
-        this.classList.toggle('open');
-        document.querySelector('.menu-links').classList.toggle('open');
-      });
-      
-    
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburgerIcon = document.querySelector(".hamburger-icon");
+    const menuLinks = document.querySelector(".menu-links");
 
-    // Check if the elements exist before toggling classes
-    if (menu && icon) {
-        menu.classList.toggle("open");
-        icon.classList.toggle("open");
-        
+    if (hamburgerIcon && menuLinks) {
+        // Toggle menu visibility on icon click
+        hamburgerIcon.addEventListener("click", () => {
+            menuLinks.classList.toggle("open");
+            hamburgerIcon.classList.toggle("open");
+        });
+
+        // Close menu when any link is clicked
+        menuLinks.addEventListener("click", (event) => {
+            if (event.target.tagName === "A") {
+                menuLinks.classList.remove("open");
+                hamburgerIcon.classList.remove("open");
+            }
+        });
     } else {
-        console.error("Menu or icon element not found");
+        console.error("Hamburger icon or menu links not found.");
     }
-}
+});

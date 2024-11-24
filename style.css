@@ -833,5 +833,34 @@ footer {
   padding: 40px 0; /* Add some padding */
   text-align: center; /* Center the text */
   height: min-content;
+
+
 }
+
+
+
+
+/* Default for larger screens */
+.intro-text {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .intro-text {
+      font-size: 14px;  /* Adjust font size for mobile */
+      padding: 80px;
+      margin: 0px;
+  }
+}
+
+#hamburger-nav {
+  display: none;
+}
+
+
+
 
