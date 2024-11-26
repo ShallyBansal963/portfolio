@@ -26,23 +26,24 @@
     </header>
   
     <nav id="hamburger-nav">
-          <div class="logo">Shally's Portfolio</div>
-          <div class="hamburger-menu">
-              <div class="hamburger-icon">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-              </div>
-              <ul class="menu-links">
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="#certificates">Certificates</a></li>
-                  <li><a href="#Publications">Publications</a></li>
-                  <li><a href="#contact">Contact</a></li>
-              </ul>
-          </div>
-      </nav>
+        <div class="logo">Shally's Portfolio</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#Publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
 
     <section id="profile">
         <div class="section__pic-container">
@@ -337,46 +338,49 @@
 <div id="contact">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
-    <br>
     <div class="section-container">
-        <!-- Left Column (Text) -->
-        <div class="section-text">
-            <h3>Let's Connect</h3>
-            <br>
-            <p class="intro-text">
-                I’m a data analyst passionate about solving problems and helping others grow. 
-                Whether you need help or feel like reaching out, I’m also open to exploring new opportunities.
-            </p>
-            <br>
-            <br>
-            <div class="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" onclick="location.href='https://www.linkedin.com/in/shellybbansal'" class="icon-margin" />
-                <img src="./assets/github.png" alt="My GitHub profile" onclick="location.href='https://github.com/ShallyBansal963'" class="icon-margin" />
-            </div>
+      <!-- Left Column (Text) -->
+      <div class="section-text">
+       
+        <p class="intro-text">
+          I’m a data analyst passionate about solving problems and helping others grow. 
+          Whether you need help or feel like reaching out, I’m also open to exploring new opportunities.
+        </p>
+        <div class="intro-text">
+          <img 
+            src="./assets/linkedin.png" 
+            alt="My LinkedIn profile" 
+            class="icon-margin" 
+            onclick="window.open('https://www.linkedin.com/in/shellybbansal', '_blank')" />
+          <img 
+            src="./assets/github.png" 
+            alt="My GitHub profile" 
+            class="icon-margin" 
+            onclick="window.open('https://github.com/ShallyBansal963', '_blank')" />
         </div>
-        
-        <div class="contact-card">
-            <form action="https://formspree.io/f/xvgokerk" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required />
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required />
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn-submit">Send Message</button>
-            </form>
-        </div>
+      </div>
+      
+      <!-- Right Column (Contact Form) -->
+      <div class="contact-card">
+        <form action="https://formspree.io/f/xvgokerk" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
     </div>
-</div>
-<br>
-<br>
-<div>
+  </div>
+  
     <footer>
         <nav id="desktop-nav">
             <div>
